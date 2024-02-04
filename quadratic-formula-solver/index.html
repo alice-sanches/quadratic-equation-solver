@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadratic Formula Solver</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+	<div id="main-div">
+        <h1>Quadratic formula solver</h1>
+        <p>Given a quadratic equation of form y = ax^2 + bx + c, input the values of a, b, and c below to get the possible values of x.</p>
+        <div id="input-space">
+            <form onsubmit="event.preventDefault();">
+                <input id="value-of-a" type="number" placeholder="a" required>
+                <input id="value-of-b" type="number" placeholder="b" required>
+                <input id="value-of-c" type="number" placeholder="c" required>
+                <button type="submit" id="submit-button">Calculate</button>
+            </form>
+        </div>
+        <div id="result-display">
+            <p id="result"></p>
+        </div>
+    </div>
+    <script src="quadraticFormula.js"></script>
+  </body>
+</html>
